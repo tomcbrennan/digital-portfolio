@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class = 'html-home' lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Tom Brennan | UI/UX Designer" content="index,follow" />
+    <meta
+    name="description"
+    content="Welcome to my creative corner, the home of my designs and experiences."
+  />
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <link
+      rel="shortcut icon"
+      href="/media/tb-logo-round-alt.png"
+    />
+    
+    <link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="dist/hamburgers.css" rel="stylesheet">
+
+    <title>Tom Brennan | UI/UX Designer</title>
+    <script src="index.js" type="module"></script>
+  </head>
+  
+  <body>
+
+    <section id="home">
+
+      <div class="hamburger hamburger--spring">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+
+      <a class="mobile-menu-logo" href = '#'>
+        <img id = 'mobile-menu-logo' src="/media/tb-logo-wink.svg"/>
+      </a>
+
+
+      <div class="mobile-menu">
+
+        <a class="mobile-home-about-container mobile-nav-container" href='#about'>
+          <h2>who am i?</h2>
+        </a>
+        <a class="mobile-home-portfolio-container mobile-nav-container" href="#portfolio">
+          <h2>my designs.</h2>
+        </a>
+        <a class="mobile-home-contact-container mobile-nav-container" href='#contact'>
+          <h2>get in touch!</h2>
+        </a>
+        <div class="mobile-socials">
+          <a class="mobile-email" href = 'mailto:hello.tbcreative@ygmail.com'>
+            <i class="fas fa-envelope-square fa-2x"></i>
+          </a>
+          <a class="mobile-instagram" href="https://www.instagram.com/tbcreative.design/">
+            <i class="fab fa-instagram-square fa-2x"></i>
+          </a>
+          <a class="mobile-linkedin"  href="https://www.linkedin.com/in/thomas-brennan-523b68119/">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+        
+      <div class="cursor">
+        <h3 class="about-cursor">do you really want to know?</h3>
+        <h3 class="portfolio-cursor">what you're really here for.</h3>
+        <h3 class="dont-cursor">don't even think about it!</h3>
+        <h3 class="contact-cursor">dialling tom...</h3>
+      </div>
+
+
+      <a class="home-about-container nav-container" href='#about'>
+        <h2>who am i?</h2>
+      </a>
+      <a class="home-portfolio-container nav-container" href="#portfolio">
+        <h2>my designs.</h2>
+      </a>
+      <!-- <a class="home-dont-container nav-container" >
+        <h2>don't click this!</h2>
+      </a> -->
+      <a class="home-contact-container nav-container" href='#contact'>
+        <h2>get in touch!</h2>
+      </a>
+
+      <div class="menu-logo-container">
+        <a class="menu-logo" href = '#'>
+          <img id = 'menu-logo' src="/media/tb-logo-wink.svg" />
+      </a>
+      </div>
+
+      <!-- ROOT -->
+      <div id="content"></div>
+      <!-- ROOT -->
+
+
+
+    </section>
+
+    <div class="social-links">
+      <a
+        class="social-link1" id = 'copy-email'
+        data-clipboard-text="hello.tbcreative@gmail.com">
+        <h3 class = 'copy-text'>copy to clipboard</h3>
+        <i class="fas fa-envelope-square fa-2x"></i>
+    </a>
+
+      <a class="social-link2" href="https://www.instagram.com/tbcreative.design/" target="_blank">
+          <h3>view instagram</h3>
+        <i class="fab fa-instagram-square fa-2x"></i>
+      </a>
+
+      <a class="social-link3" href="https://www.linkedin.com/in/thomas-brennan-523b68119/"
+      target="_blank">
+        <h3>view linkedin</h3>
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+
+
+
+      
+<!-- homepage template -->
+      <script async type="text/template" id="template-page-home">
+        <div class="home-section">
+          <div class="home-content">
+            <div class="home-intro">
+                <h2 class="rw-sentence">
+                    <span>i love building</span>
+                    <div class="rw-words rw-words-1">
+                      <span>applications</span>
+                      <span>websites</span>
+                      <span>experiences</span>
+                    </div>
+                    <br />
+                    <span>with a touch of</span>
+                    <div class="rw-words rw-words-2">
+                      <span>adventure.</span>
+                      <span>wonder.</span>
+                      <span>excitement.</span>
+                    </div>
+                  </h2>
+            </div>
+            
+
+            <div class="home-logo">
+                <img id = 'logo' src="/media/tb-logo-wink.svg" alt = 'Logo' />
+            </div>
+      
+            <div class="about-icon"><i class="fas fa-question"></i></div>
+      
+            <div class="portfolio-icon"><i class="fas fa-folder-open"></i></div>
+      
+            <div class="dont-icon"><i class="fas fa-exclamation"></i></div>
+      
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            </div>
+        </div>
+
+
+    </script>
+
+
+
+<!-- about page template -->
+      <script async type="text/template" id="template-page-about">
+        <section class="about1">
+            <div class="about1-image">
+              <img class="intro-pic" src="/media/intro-pic.png" />
+            </div>
+            <div class="about1-text">
+              <h1 class="hello">Hello, I'm Tom Brennan!</h1>
+              <h3 class="hello2">
+                I'm a UI/UX Designer from Perth, Western Australia.
+              </h3>
+              <p class = 'hello3'> Since I can remember, I've been a sucker for sports, sushi, family board game nights and most importantly, building things. From the moment I picked up my first LEGO brick as a child, the desire to turn the smallest of ideas into my own unique experiences has steadily eased me towards the digital world. This passion has finally landed me where I am today, a Digital Design graduate at Curtin University, with nothing exciting me more than where design can take us in the future! </p>
+              
+            </div>
+          </section>
+
+
+    </script>
+
+    <!------------------ portfolio page template -------------------->
+    <script async type="text/template" id="template-page-portfolio">
+    <section class="portfolio-section" id="featured">
+
+
+      <div class="portfolio-text">
+          <h1>Pick a project...</h1>
+          <h2>don't overthink it!</h2>
+      </div>
+        <div class="portfolio-content">
+
+          
+          <div class="project-container" id="pocketpark-container">
+            <a class="project-card" href="pocketpark.html" id="pocketpark-card" href="/pocketpark.html" >
+              <img src="/media/car.svg" alt="pocket park logo" class="pocketpark-logo"/>
+              <h1 class="title">Pocket Park</h1>
+            </a>
+          </div>
+          
+          
+
+          <div class="project-container" id="premierleague-container">
+              <a class="project-card" id="premierleague-card" href="/premierleague.html" >
+                <img src="/media/epl-logo-white.png" alt="premierleague" class="premierleague-logo"/>
+                <h1 class="title">Premier League</h1>
+              </a>
+            </div>
+          
+            <div class="project-container" id="projectsportal-container">
+              <a class="project-card" id="projectsportal-card" href="/projectsportal.html" >
+                <img src="/media/project-sportal-logo.svg" alt="projectsportal" class="projectsportal-logo"/>
+                <h1 class="title">Project Sportal</h1>
+               
+              </a>
+            </div>
+          
+
+            <div class="project-container" id="cloud9travel-container">
+                <a class="project-card" id="cloud9travel-card" href='/cloud9travel.html'>
+                  <img src="/media/cloud9travel-logo.svg" alt="cloud9travel" class="cloud9travel-logo"/>
+                  <h1 class="title">Cloud 9 Travel</h1>
+                </a>
+              </div>
+
+          
+
+      </section>
+    </script>
+
+
+    <!-- contact page template -->
+    <script type="text/template" id="template-page-contact">
+      <section class="contact-section">
+        <div class="contact-text">
+          <h1>Got some cool ideas? Maybe some feedback?</h1>
+          <h2>Let's get chatting!</h2>
+        </div>
+        <div class="contact-icons">
+          <div class="contact-email" data-clipboard-text="hello.tbcreative@gmail.com">
+            <i class="fas fa-envelope-square fa-2x"></i>
+            <h3 class = 'contact-copy'>click to copy to clipboard!</h3>
+          </div>
+
+          <a class = 'contact-instagram' href="https://www.instagram.com/tbcreative.design/" target="_blank">
+              <i class="fab fa-instagram-square fa-2x"></i>
+          </a>
+          <a class = 'contact-linkedin' href="https://www.linkedin.com/in/thomas-brennan-523b68119/" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </section>
+    </script>
+    
+
+
+
+
+    <script src='cursor.js'></script>
+
+    <script src='hamburger.js'></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.4/tippy.all.min.js" integrity="sha512-9LKXH8DIeFSdiDIWQSOJNZuwLynJNm4x/1eBRpPfRJsEXZWJL+aoH+JNDglF3DcCoQYVBHqXo8sVHOLveoaN0A==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/0e24537e5f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

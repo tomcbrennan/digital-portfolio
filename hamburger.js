@@ -1,0 +1,46 @@
+const hamburger = document.querySelector('.hamburger');
+const hamburgerMenu = document.querySelector('.mobile-menu');
+const hamburgerMenuLogo = document.querySelector('.mobile-menu-logo');
+
+
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    hamburgerMenu.classList.toggle('is-active');
+    hamburgerMenuLogo.classList.toggle('is-active');
+});
+
+
+const navItem1 = document.querySelector('.mobile-home-about-container');
+const navItem2 = document.querySelector('.mobile-home-portfolio-container');
+const navItem3 = document.querySelector('.mobile-home-contact-container');
+
+
+navItem1.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    hamburgerMenu.classList.toggle('is-active');
+    hamburgerMenuLogo.classList.toggle('is-active');
+})
+
+
+navItem2.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    hamburgerMenu.classList.toggle('is-active');
+    hamburgerMenuLogo.classList.toggle('is-active');
+})
+
+navItem3.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    hamburgerMenu.classList.toggle('is-active');
+    hamburgerMenuLogo.classList.toggle('is-active');
+})
+
+hamburgerMenuLogo.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    hamburgerMenu.classList.toggle('is-active');
+    hamburgerMenuLogo.classList.toggle('is-active');
+})
+
+
+
