@@ -5146,7 +5146,7 @@ button {
   }
   .contact-email i,
   .contact-instagram i,
-  .contact-linkedin i {
+  .contact-linkedin i, .contact-github i {
     font-size: 1em;
   }
   .contact-copy {
