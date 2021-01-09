@@ -32,7 +32,7 @@ function portfolioPageController() {
 
       const homeAbout = document.querySelector(".home-about-container");
       const homePortfolio = document.querySelector(".home-portfolio-container");
-      const homeDont = document.querySelector(".home-dont-container");
+      const homeDont = document.querySelector(".home-blog-container");
       const homeContact = document.querySelector(".home-contact-container");
 
       const homeDiv = document.querySelector(".home-content");
@@ -136,6 +136,15 @@ function portfolioPageController() {
       copyEmail.addEventListener("click", () => {
         document.querySelector(".copy-text").innerHTML = "copied!";
       });
+
+      if(document.documentElement.clientWidth > 1024){
+        document.querySelector('.home-about-container').style.display = 'block';
+        document.querySelector('.home-portfolio-container').style.display = 'block';
+        document.querySelector('.home-contact-container').style.display = 'block';
+      } else {
+        document.querySelector('.hamburger-box').style.display = 'block';
+      }
+
     }
   );
 }

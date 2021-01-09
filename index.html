@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/mustache@latest"></script>
 
     <link rel="shortcut icon" href="/media/tb-logo-round-alt.png"/>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="dist/hamburgers.css" rel="stylesheet">
@@ -71,8 +71,8 @@
       <a class="home-portfolio-container nav-container" href="#portfolio">
         <h2>my designs.</h2>
       </a>
-      <!-- <a class="home-dont-container nav-container" >
-        <h2>don't click this!</h2>
+      <!-- <a class="home-blog-container nav-container" >
+        <h2>my blog.</h2>
       </a> -->
       <a class="home-contact-container nav-container" href='#contact'>
         <h2>get in touch!</h2>
@@ -94,21 +94,27 @@
 
     <div class="social-links">
       <a
-        class="social-link1" id = 'copy-email'
+        class="social-link" id = 'copy-email'
         data-clipboard-text="hello.tbcreative@gmail.com">
         <h3 class = 'copy-text'>copy to clipboard</h3>
         <i class="fas fa-envelope-square fa-2x"></i>
     </a>
 
-      <a class="social-link2" href="https://www.instagram.com/tbcreative.design/" target="_blank">
+      <a class="social-link" href="https://www.instagram.com/tbcreative.design/" target="_blank">
           <h3>view instagram</h3>
         <i class="fab fa-instagram-square fa-2x"></i>
       </a>
 
-      <a class="social-link3" href="https://www.linkedin.com/in/thomas-brennan-523b68119/"
+      <a class="social-link" href="https://www.linkedin.com/in/thomas-brennan-523b68119/"
       target="_blank">
         <h3>view linkedin</h3>
         <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+
+      <a class="social-link" href="https://github.com/tomcbrennan"
+      target="_blank">
+        <h3>view github</h3>
+        <i class="fab fa-github-square fa-2x"></i>
       </a>
 
 
@@ -167,7 +173,7 @@
               <h3 class="hello2">
                 I'm a UI/UX Designer from Perth, Western Australia.
               </h3>
-              <p class = 'hello3'> Since I can remember, I've been a sucker for sports, sushi, family board game nights and most importantly, building things. From the moment I picked up my first LEGO brick as a child, the desire to turn the smallest of ideas into my own unique experiences has steadily eased me towards the digital world. This passion has finally landed me where I am today, a Digital Design graduate at Curtin University, with nothing exciting me more than where design can take us in the future! </p>
+              <p class = 'hello3'> Since I can remember, I've been a sucker for sports, sushi, family board game nights and most importantly, building things. From the moment I picked up my first LEGO brick as a child, the desire to turn the smallest of ideas into my own unique experiences has steadily eased me towards the digital world. This passion has finally landed me where I am today, a Digital Design graduate at Curtin University, with nothing exciting me more than where user interface and experience design can take us in the future! </p>
               
             </div>
           </section>
@@ -186,38 +192,52 @@
       </div>
         <div class="portfolio-content">
 
-          
+         
           <div class="project-container" id="pocketpark-container">
-            <a class="project-card" href="pocketpark.html" id="pocketpark-card" href="/pocketpark.html" >
-              <img src="/media/car.svg" alt="pocket park logo" class="pocketpark-logo"/>
-              <h1 class="title">Pocket Park</h1>
+            <a class="project-card" id="pocketpark-card" href="#pocketpark" >
+              <div class="card-logo-container">
+                <img src="/media/car.svg" alt="Pocket Park logo" class="pocketpark-logo"/>
+              </div>
             </a>
           </div>
           
           
 
           <div class="project-container" id="premierleague-container">
-              <a class="project-card" id="premierleague-card" href="/premierleague.html" >
-                <img src="/media/epl-logo-white.png" alt="premierleague" class="premierleague-logo"/>
-                <h1 class="title">Premier League</h1>
+              <a class="project-card" id="premierleague-card" href="#premierleague" >
+                <div class="card-logo-container">
+                  <img src="/media/epl-logo-white.png" alt="Premier League logo" class="premierleague-logo"/>
+                </div>
               </a>
-            </div>
+          </div>
           
-            <div class="project-container" id="projectsportal-container">
-              <a class="project-card" id="projectsportal-card" href="/projectsportal.html" >
-                <img src="/media/project-sportal-logo.svg" alt="projectsportal" class="projectsportal-logo"/>
-                <h1 class="title">Project Sportal</h1>
-               
-              </a>
-            </div>
+          <div class="project-container" id="projectsportal-container">
+            <a class="project-card" id="projectsportal-card" href="#projectsportal" >
+              <div class="card-logo-container">
+                <img src="/media/project-sportal-logo.svg" alt="Project Sportal logo" class="projectsportal-logo"/>
+              </div>
+            </a>
+          </div>
           
 
-            <div class="project-container" id="cloud9travel-container">
-                <a class="project-card" id="cloud9travel-card" href='/cloud9travel.html'>
-                  <img src="/media/cloud9travel-logo.svg" alt="cloud9travel" class="cloud9travel-logo"/>
-                  <h1 class="title">Cloud 9 Travel</h1>
-                </a>
-              </div>
+          <div class="project-container" id="cloud9travel-container">
+              <a class="project-card" id="cloud9travel-card" href='#cloud9travel'>
+                <div class="card-logo-container">
+                  <img src="/media/cloud9travel-logo.svg" alt="Cloud 9 Travel logo" class="cloud9travel-logo"/>
+                </div>
+              </a>
+          </div>
+
+          <div class="project-container" id="kingkraft-container">
+              <a class="project-card" id="kingkraft-card" href='https://kingkraftsheetmetal.netlify.app/' target='_blank'>
+                <div class="card-logo-container">
+                  <img src="/media/kingkraft-crown.svg" alt="Kingkraft logo" class="kingkraft-logo"/>
+                </div>
+              </a>
+          </div>
+        </div>
+      
+          
 
           
 
@@ -244,11 +264,697 @@
           <a class = 'contact-linkedin' href="https://www.linkedin.com/in/thomas-brennan-523b68119/" target="_blank">
               <i class="fab fa-linkedin fa-2x"></i>
           </a>
+          <a class = 'contact-github' href="https://github.com/tomcbrennan" target="_blank">
+              <i class="fab fa-github-square fa-2x"></i>
+          </a>
         </div>
       </section>
     </script>
-    
 
+
+
+    <!-- POCKET PARK PAGE -->
+    <script type="text/template" id="template-page-pocketpark">
+      <main class = 'page-pocketpark'>
+
+        <a class="back-btn" href='#portfolio'>
+            <i class="fas fa-arrow-left fa-2x"></i>
+            <img src = 'media/tb-logo.svg' class = 'project-tb-logo'>
+        </a> 
+        
+        
+
+        <section class = 'pocketpark-intro'>
+
+            <div class="pocketpark-details">
+                <div class="app-icon">
+                    <img src="/media/adobexd.png" alt="adobe xd">
+                    <h3>Mobile Application</h3>
+                </div>
+                <div class="colors">
+                    <div class="pp-color1"></div>
+                    <div class="pp-color2"></div>
+                    <div class="pp-color3"></div>
+                    <div class="pp-color4"></div>
+                </div>
+            </div>
+
+            
+            <div class="pocketpark-title">
+                <h1>Pocket</h1>
+                <h1>Park</h1>
+            </div>
+            
+            
+        </section>
+
+        <section class="pocketpark-about">
+            <div class="pocketpark-tagline" >
+                <h1> A neumorphic approach to a simple & compact parking solution.</h1>
+            </div>
+
+            <div class="pocketpark-app-intro" >
+                <img src = '/media/pocketpark-intro.png'>
+            </div>
+        </section>
+
+        <section class="pocketpark-problem">
+            <div class="pocketpark-problem-content">
+                <h1> THE PROBLEM.</h1>
+                <h2>The ever-present prominence of parking congestion across Perth, accompanied by rising parking fees, marks a huge source of frustration for the average daily commuter.</h2>
+            </div>
+            <div class="pocketpark-goals-content">
+                <h1> PROJECT GOALS.</h1>
+                <h2>I aim to address this problem by bringing an unmatched, unique and satisfying digital experience when paying for parking. More specifically, in designing Pocket Park, I focussed heavily on tackling the following issues:</h2>
+
+                    <div class="pp-goals-list">
+                        <div class="pp-goal">
+                                <i class="fas fa-eye fa-3x"></i>
+                            <h2>Help counteract the difficulty of finding a car park</h2>
+                        </div>
+                        <div class="pp-goal">
+                            <i class="fas fa-angry fa-3x"></i>
+                            <h2>Provide a source of emotional relief when reluctantly having to pay for parking</h2>
+                        </div>
+                        <div class="pp-goal" >
+                                <i class="fab fa-envira fa-3x"></i>
+                            <h2>Promote reduced carbon emissions from driving</h2>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="pp-image">
+        <img src="/media/pocketparkhand.png" alt="pocket park">
+        </section>
+
+            <section class = 'pp-key-features'>
+                <div class="pp-key-features-title">
+                    <h1> Key Features. </h1>
+                </div>
+                <div class="pp-content">
+                    <div class="pp-content-text" >
+                        <h1>Clean, neumorphic approach to parking.</h1>
+                        <p>Standing out from the rest can be an overwhelming task. In designing Pocket Park, I wanted to take a more non-linear approach to the visual aesthetic. Neumorphism's modern and clean appeal caters to a simple application with only a handful of features. With users only using this app for minimal time, I wanted to ensure that the experience activating and de-activating parking was enhanced by this pristine visual approach and ease an of access to all features.</p>
+                    </div>
+                    <div class="pp-content-video" >
+                        <video autoplay muted loop src="/media/pp-intro.mov" type='video/mov' alt="pocket park intro">
+                    </div>
+                </div>
+                <div class="pp-content">
+                    <div class="pp-content-video" >
+                        <video autoplay muted loop src="/media/pp-activate.mov" type='video/mov' alt="pocket park activate">
+                    </div>
+                    <div class="pp-content-text" >
+                        <h1>Activate your parking at the touch of a button.</h1>
+                        <p>Throughout the ideation process, I wanted to ensure that using the activation features took as little time as possible, allowing the user to spend more time doing what is most important in their day. This process needed to be seamless and provide as little distractions as possible, whilst also clearly providing the user feedback on the status of the action.</p>
+                    </div>
+                </div>
+                <div class="pp-content">
+                    <div class="pp-content-text" >
+                        <h1>View available parking bays through logical navigation.</h1>
+                        <p>Before even paying for parking, finding a park can be source of immense frustration. Pocket Park aims to ease this frustration by providing quick feedback to the user on how busy their parking destination is and where they might find free parking bays within it using GPS positioning.</p>
+                    </div>
+                    <div class="pp-content-video" >
+                        <video autoplay muted loop src="/media/pp-menu.mov" type='video/mov' alt="pocket park menu">
+                    </div>
+                </div>
+                <div class="pp-content">
+                    <div class="pp-content-video" >
+                        <video autoplay muted loop src="/media/pp-rideshare.mov" type='video/mov' alt="pocket park rideshare" >
+                    </div>
+                    <div class="pp-content-text" >
+                        <h1>Split your fare with rideshare.</h1>
+                        <p>Parking fees are a nuisance. Enter ridesharing, whereby users are encouraged to drive one another to destinations, split the fare, and most importantly, pay less. The process is as simple as the driver scanning each riders QR code and the charge will be divided evenly. Quick and logical!</p>
+                    </div>
+                </div>
+            </section>
+            <div class="pocketpark-research-content">
+                    <div class="pocketpark-research-title">
+                        <h1> RESEARCH PROCESS</h1>
+                    </div>
+                    <div class="pocketpark-research-processes">
+                        <div class="research-process-top">
+                            <div class="interviews" >
+                                <i class="fas fa-comments fa-3x"></i>
+                                <h2>Interviews</h2>
+                            </div>
+                            <div class="system-map" >
+                                <i class="fas fa-sitemap fa-3x"></i>
+                                <h2>System Map</h2>
+                            </div>
+                        </div>
+                        <div class="research-process-middle">
+                            <div class="persona">
+                                <i class="fas fa-user fa-3x"></i>
+                                <h2>Persona</h2>
+                            </div>
+                        </div>
+                        <div class="research-process-bottom">
+                            <div class="user-testing-report" >
+                                <i class="fas fa-sticky-note fa-3x"></i>
+                                <h2>User</h2>
+                                <h2>Testing Report</h2>
+                            </div>
+                            <div class="app-prototype" >
+                                <i class="fas fa-mobile fa-3x"></i>
+                                <h2>App </h2>
+                                <h2>Prototype</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+
+        <section class="pp-conclusion">
+            <div class="pp-conclusion-title">
+                <h1>What did I learn?</h1>
+            </div>
+            <p>Fundamentally, in designing Pocket Park I grasped just how important a clean interface is in regards to user satisfaction. Paying for parking is never an enjoyable process for anyone and that is something I continued to reiterate to myself when designing the application. As a result, I learnt that implementing satisfying user interactions such micro-animations plays a significant role in being able to turn a frustrating process such as paying for parking, into something that users gain an unexpectedly rich experience from.</p>
+            <p>On a more personal level, this project taught me the importance of patience and having a clear direction before iterating. Throughout the prototyping process, my direction on this project changed multiple times and I struggled immensely in how to approach the aesthetic of the interface. This was mainly due to how simple a parking app really is. Research as well as user testing played a vital role in me finally settling on a neumorphic style of approach that felt clean, compact and memorable.</p>
+        </section>
+
+        <div class="next-project" id = 'pp-next-project'>
+            <a href = '#premierleague' class="next-project-name" id = 'pp-next-project-name'>
+                <img src="/media/epl-logo.png" alt="Premier League logo">
+                <h2>Premier League</h2>
+                <div class="next-project-arrow">
+                    <h2>Check it out</h2>
+                    <i class="fas fa-arrow-right fa-2x"></i>
+                </div>
+            </a>
+        </div>
+      </main>
+    </script>
+
+    <!-- PREMIER LEAGUE PAGE -->
+
+    <script type="text/template" id="template-page-premierleague">
+      <main class="page-premierleague">
+        <a class="back-btn" href="#portfolio">
+          <i class="fas fa-arrow-left fa-2x"></i>
+          <img src="media/tb-logo.svg" class="project-tb-logo" />
+        </a>
+  
+        <section class="premierleague-intro">
+          <div class="title">
+            <img src="/media/epl-logo.png" alt="premierleague logo" />
+            <h1>Premier League</h1>
+          </div>
+          <div class="pl-details">
+            <a
+              class="pl-view-project"
+              href="http://premierleaguehub.netlify.app"
+              target="_blank"
+            >
+            <i class="fas fa-external-link-alt fa-2x"></i>
+              <h1>View Website</h1>
+            </a>
+            <div class="project-type">
+              <i class="fas fa-laptop fa-2x"></i>
+              <h2>Dynamic Web Application</h2>
+            </div>
+            <div class="premierleague-colors">
+              <div class="color1"></div>
+              <div class="color2"></div>
+              <div class="color3"></div>
+              <div class="color4"></div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="premierleague-about">
+          <div class="pl-about1">
+           <h1>The Problem</h1>
+            <p>
+              As an avid sports fan, I've seen my fair share of websites for
+              different sports leagues around the world.
+              When evaluating the recent website reskinning for English Premier
+              League Football, I found it to be an underwhelming design, with an
+              overcrowding of assets and an inconsistent user experience overall.
+              As a result of this, I resort to other websites to source the latest
+              news and results.
+              For any sporting website around the world, as a bare minimum, users
+              want clear representation of the latest scores, fixtures and
+              standings.
+            </p>
+          </div>
+        </section>
+  
+        <section class="premierleague-solution">
+          <div class="title">
+            <h1>The Solution</h1>
+          </div>
+          <div class="pl-text">
+            <div class="pl-text-description">
+              <p>
+                The devised solution was to create a desktop and mobile friendly
+                web application that utilises a backend API to source all
+                necessary results, fixtures and standings. As the user navigates,
+                the latest data is fetched from API Football and displayed,
+                respective of which tab they are viewing. Within the results page,
+                live matches are displayed first, followed by the latest results
+                in chronological order.
+              </p>
+              <div class="pl-grid">
+                <div class="pl-grid-box">
+                  <i class="fas fa-code fa-2x"></i>
+                  <h2>HTML</h2>
+                </div>
+                <div class="pl-grid-box">
+                  <i class="fab fa-sass fa-2x"></i>
+                  <h2>SASS</h2>
+                </div>
+                <div class="pl-grid-box">
+                  <i class="fab fa-js fa-2x"></i>
+                  <h2>JAVASCRIPT</h2>
+                </div>
+                <div class="pl-grid-box">
+                  <i class="fas fa-server fa-2x"></i>
+                  <h2>API</h2>
+                </div>
+              </div>
+              <p>
+                Throughout the design process, I aimed to put a strong emphasis on
+                the visual experience, ensuring users feel the same excitement
+                using the web application as they do when whitnessing the Premier
+                League in action. A concious decision to enhance this factor is
+                the minimised navbar design. This ensures that users are given
+                maximum viewing space on the website to view the most important
+                content as easily as possible.
+              </p>
+              <div class="pl-solution-images">
+                <img src="/media/liverpool-title.jpg" alt="liverpool" />
+                <img src="/media/chelsea-title.jpg" alt="chelsea" />
+                <img
+                  src="/media/manchester-city-title.jpg"
+                  alt="manchester city"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="epl-divider-image">
+          <img src="/media/premierleaguedisplay2.png" alt="premier league display">
+        </div>
+        <section class="premierleague-branding">
+          <div class="title">
+            <img src="/media/epl-logo.png" alt="premier league logo" />
+            <h1>Branding & Assets</h1>
+          </div>
+          <div class="branding-content">
+            <p>
+              Adhering to the current Premier League branding was at the core of
+              the design. The vibrant colour palette lends itself to implement
+              some creative flair, and so I attempted to add bursts of the
+              brighter colours within their palette where possible. Examples of
+              this are the green nav menu and pink hover events over buttons. The
+              overall intention of this is to gain user attention and reflect the
+              exciting and diverse nature of not only the league, but also the
+              teams and their fans.
+            </p>
+            <img src="/media/epl-assets.png" alt="premier league assets" />
+          </div>
+        </section>
+  
+        <section class="pl-learn">
+          <h1>What did I learn?</h1>
+          <p>A key take away from this project was the realisation of just how robust and polished a website becomes with incorporating a rich external API into the design. Furthermore, the ability to manipulate JSON data to ensure that the website functions just how I originally intended is eye opening. It is extremely reassuring to knowing that there are so many powerful API's to source from around the web and that I now have the a base understanding of how these are implemented. I am extremely proud of this project's outcome, and have used it on numerous occasions to check the latest scores and standings from the league on both mobile and desktop. I strongly believe that there are endless possibilities from here in terms of building on the application. Through further iterations, I would love to include modals of matches, featuring key match events and scores at different periods of the games.</p>
+        </section>
+  
+        <div class="next-project" id = 'pl-next-project'>
+          <a href = '#projectsportal' class="next-project-name" id = 'pl-next-project-name'>
+            <img src="/media/project-sportal-logo.svg" alt="Project Sportal logo">
+            <h2>Project Sportal</h2>
+            <div class="next-project-arrow">
+                <h2>Check it out</h2>
+                <i class="fas fa-arrow-right fa-2x"></i>
+            </div>
+          </a>
+        </div>
+      </main>
+    </script>
+
+
+    <!-- PROJECT SPORTAL PAGE -->
+    
+    <script type="text/template" id="template-page-projectsportal">
+      <main class="page-projectsportal">
+        <a class="back-btn" href="#portfolio">
+          <i class="fas fa-arrow-left fa-2x"></i>
+          <img src="media/tb-logo.svg" class="project-tb-logo" />
+        </a>
+  
+        <section class="projectsportal-intro">
+          <div class="projectsportal-title">
+            <img src="/media/project-sportal-logo.svg" alt="projectsportal" />
+            <h1>Project Sportal</h1>
+          </div>
+  
+          <div class="project-type">
+            <img src="/media/adobexd.png" alt="adobe xd">
+            <h2>Mobile Application</h2>
+          </div>
+  
+          <div class="projectsportal-colors">
+            <div class="ps-color1"></div>
+            <div class="ps-color2"></div>
+            <div class="ps-color3"></div>
+            <div class="ps-color4"></div>
+            <div class="ps-color5"></div>
+            <div class="ps-color6"></div>
+          </div>
+        </section>
+  
+        <section class="projectsportal-about">
+          <div class="projectsportal-tagline">
+            <h1>
+              A comprehensive sporting application, serving to cohesively motivate
+              students to utilise Curtin's modern sporting facilities & remain
+              active around campus.
+            </h1>
+          </div>
+          <div class="projectsportal-screens">
+            <div class="projectsportal-1">
+              <img src="/media/projectsportal-home.png" alt="project sportal home"/>
+            </div>
+            <div class="projectsportal-2">
+              <img src="/media/projectsportal-title.png" alt="project sportal title"/>
+            </div>
+            <div
+              class="projectsportal-3">
+              <img src="/media/projectsportal-menu.png" alt="project sportal menu"/>
+            </div>
+          </div>
+        </section>
+  
+        <section class="projectsportal-problem">
+          <div class="problem-container">
+            <div class="problem-title">
+              <h1>The</h1>
+              <h1>Problem</h1>
+            </div>
+            <div class="problem-description">
+              <h2>
+                Remaining fit and active has always been a challenging task for
+                people whose time is heavily occupied by work and study. Curtin
+                University is home to a wealth of sporting facilities at the
+                Bentley campus. There is however a serious lack of students who
+                are both motivated & willing to utilise these facilities and
+                exercise when on campus.
+              </h2>
+            </div>
+          </div>
+  
+          <div class="goals-container">
+            <div class="goals-title">
+              <h1>Project</h1>
+              <h1>Goals</h1>
+            </div>
+  
+            <div class="goals-description">
+              <div class="ps-goal">
+                <i class="fas fa-running fa-2x"></i>
+                <h2>
+                  Motivate students & staff to exercise frequently on campus
+                </h2>
+              </div>
+              <div class="ps-goal">
+                <i class="fas fa-calendar-day fa-2x"></i>
+                <h2>
+                  Promote continuity of exercise throughout weekly campus visits
+                </h2>
+              </div>
+              <div class="ps-goal">
+                <i class="fas fa-exclamation-circle fa-2x"></i>
+                <h2>
+                  Raise awareness of sporting facility access for both students
+                  and staff
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="projectsportal-research">
+          <div class="research-container">
+            <!-- <div class="background-research">
+                      hi
+                  </div>
+                  <div class="survey">
+                      hi
+                  </div>
+                  <div class="existing-solutions">
+                      hi
+                  </div>
+                  <div class="timeline">
+                      hi
+                  </div>
+                  <div class="ps-persona">
+                      hi
+                  </div> 
+                  <div class="ps-app-prototype">
+                      hi
+                  </div> -->
+          </div>
+        </section>
+  
+        <section class="ps-key-features">
+          <div class="ps-key-features-title">
+            <h1>Key Features</h1>
+          </div>
+          <div class="ps-content">
+            <div class="ps-content-text">
+              <h1>Your solution to exercising on campus.</h1>
+              <p>
+                Project Sportal provides users with a hub of listed sporting
+                activities from other users at campus. The dashboard screen of the
+                app invites users to explore the live mapping feature, with
+                visualised sport listings from other students on campus. Listings
+                are displayed at the location that the host has specified, with an
+                icon for the respective sporting activity.
+              </p>
+            </div>
+            <div class="ps-content-video">
+              <video autoplay muted loop src="/media/ps-intro.mov" type="video/mov" alt="project sportal intro"></video>
+            </div>
+          </div>
+          <div class="ps-content">
+            <div class="ps-content-video">
+              <video autoplay muted loop src="/media/ps-join.mov" type="video/mov" alt="project sportal join"></video>
+            </div>
+            <div class="ps-content-text">
+              <h1>Join a listed sporting activity.</h1>
+              <p>
+                Students and staff are able to view listed sports on the live map
+                feed and search filter, depending on their exercise preference.
+                Once a student has found a suitable event and time slot, they are
+                able to join the activity. This activity is then listed into their
+                upcoming activities panel. When the activity has been concluded by
+                the host, participants receive reward icons and progress towards
+                their weekly fitness goals.
+              </p>
+            </div>
+          </div>
+          <div class="ps-content">
+            <div class="ps-content-text">
+              <h1>List your own sporting activity.</h1>
+              <p>
+                Curtin University contains a plethora of sporting facilities that
+                are available for use by students. Project Sportal allows students
+                to list their own sporting activities during their free time in
+                study breaks or inbetween classes. The aim of this process is to
+                make exercising a more social and inclusive activity that
+                encourages those who do not particularly enjoy exercisng. The
+                ability to list your own activity reduces the constraints that
+                other forced fitness activities may implement.
+              </p>
+            </div>
+            <div class="ps-content-video">
+              <video autoplay muted loop src="/media/ps-list.mov" type="video/mov" alt="project sportal list"></video>
+            </div>
+          </div>
+          <div class="ps-content">
+            <div class="ps-content-video">
+              <video autoplay muted loop src="/media/ps-menu.mov" type="video/mov" alt="project sportal menu"></video>
+            </div>
+            <div class="ps-content-text">
+              <h1>View your weekly exercise log.</h1>
+              <p>
+                The user's weekly exercise activity is logged within the menu,
+                displaying their total exercise time with their own activity
+                listings, as well as how far off their weekly goal they are. This
+                design feature, along with a rankings system, was implement to
+                motivate users to continue pushing for their fitness goals each
+                week.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="ps-conclusion">
+          <h1>What did I learn?</h1>
+          <p>
+            Project Sportal presented me with my first concrete opportunity to
+            improve my ability in collating user research and produce an overall
+            solution that adhered to this research. More specifically, being a
+            problem primarily targeted at students on campus, I was able to easily
+            obtain the wants, needs and perspectives of students that aided my
+            proposed solution immensely. Furthermore, throughout the prototyping
+            process, I was able to experiment with using programs that were
+            previously so foreign to me. Initial prototypes were constructed using
+            Figma, with the final solution and micro-animations made possible with
+            Adobe XD. With software like these being heavily used throughout
+            modern design industry, I was pleased to be able to develop these
+            vital skills during the development of Project Sportal.
+          </p>
+        </section>
+  
+        <div class="next-project" id = 'ps-next-project'>
+          <a href = '#cloud9travel' class="next-project-name" id = 'ps-next-project-name'>
+            <img src="/media/cloud9travel-logo.svg" alt="Cloud 9 Travel logo">
+            <h2>Cloud 9 Travel</h2>
+            <div class="next-project-arrow">
+                <h2>Check it out</h2>
+                <i class="fas fa-arrow-right fa-2x"></i>
+            </div>
+          </a>
+        </div>
+      </main>
+    </script>
+
+
+    <!-- CLOUD 9 TRAVEL PAGE -->
+
+    <script type="text/template" id="template-page-cloud9travel">
+      <main class="page-cloud9travel">
+        <a class="back-btn" href="#portfolio">
+          <i class="fas fa-arrow-left fa-2x"></i>
+          <img src="media/tb-logo.svg" class="project-tb-logo" />
+        </a>
+  
+        <section class="ct-intro">
+          <div class="opacity"></div>
+  
+          <div class="ct-title">
+            <h1>Cloud 9 Travel</h1>
+          </div>
+  
+          <a class="ct-view-website" href = 'https://cloud9travel.netlify.app' target='_blank'>
+            <h2>View website</h2>
+          </a>
+  
+          <div class="ct-details">
+            <div class="technology-type">
+              <i class="fas fa-laptop fa-2x"></i>
+              <h2>Full-Stack Web Application</h2>
+            </div>
+  
+            <div class="ct-palette">
+              <div class="color1"></div>
+              <div class="color2"></div>
+              <div class="color3"></div>
+              <div class="color4"></div>
+              <div class="color5"></div>
+            </div>
+          </div>
+          <div class="clouds">
+            <img src="/media/cloud1.png" alt="clouds" style="--i:1;" />
+            <img src="/media/cloud2.png" alt="clouds" style="--i:2;" />
+            <img src="/media/cloud3.png" alt="clouds" style="--i:3;" />
+            <img src="/media/cloud4.png" alt="clouds" style="--i:4;" />
+            <img src="/media/cloud5.png" alt="clouds" style="--i:5;" />
+          </div>
+        </section>
+  
+        <section class="ct-about">
+          <div class="ct-about-title">
+            <h1>What is Cloud 9 Travel?</h1>
+            <h3>
+              Cloud 9 Travel provides users with the ability to create an account,
+              securely log in, and build their own virtual list of desired
+              accomodation for future travels. Built with HTML, CSS & Javascript,
+              this project was my first attempt at creating a single-page
+              application with relevant and modern web development technologies.
+              Cloud 9 Travel also boasts a built in backend database which makes
+              use of Node JS and Express, with MongoDB for data storage. Further
+              features of the website include hotel favouriting and password
+              encryption with json web tokens.
+            </h3>
+          </div>
+          <div class="ct-technology">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-node"></i>
+          </div>
+        </section>
+  
+        <section class="ct-mockup">
+          <img src="/media/cloud9travel-mockup.png" alt="cloud9travel mockup">
+        </section>
+  
+        <section class="ct-goals">
+          <div class="ct-goals-title">
+            <h1>Project Goals</h1>
+          </div>
+          <div class="ct-goals-content">
+            <div class="goal">
+              <h1>Front-End Development</h1>
+              <p>
+                This project brought a great opportunity to familiarise myself
+                with modern web development trends. In particular, the use of
+                Single Page Applications (SPA), whereby a single HTML file is all
+                that is needed for Javascript to manipulate the Document Object
+                Model (DOM) and add or remove content within the page. SPA's are
+                particularly useful for faster page-to-page content loading and a
+                more dynamic application feel.
+              </p>
+            </div>
+            <div class="goal">
+              <h1>Back-End Development</h1>
+              <p>
+                Developing a back-end database was a crutial component of this
+                project. With no previous experience in this form of development,
+                I approached this task with a keen intent to learn as much as
+                possible about the structure and function of a backend API. Using
+                Express as the backend framework, this ensured the use a more
+                adaptable format to object-orientated Javascript programming.
+              </p>
+            </div>
+            <div class="goal">
+              <h1>Full-Stack Functionality</h1>
+              <p>
+                A modern full-stack website application encompasses the power of
+                technology in being able to handle user requests and dymanically
+                communicate between the frontend interface and a backend server.
+                In designing Cloud 9 Travel, it was essential that users were able
+                to create their own customised hotels list as well as log in and
+                out of their account, whilst also retaining their previous hotels
+                and favourites.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="ct-learn">
+          <h1>What did I learn?</h1>
+          <p>This project introduced me to the power of Javascript as a modern programming language as well as full-stack web development in general. Never before had I immersed myself so much in the area of web development, and I absolutely enjoyed every second of this project. Building an application such as this opens the doors to countless possibilities for future iteration and serves as a template for similar future projects. CRUD functionality is a key learning point for all web developers to take that next step towards full-stack developing and I am proud that my first attempt at this has proved to contain all the desired functionality.</p>
+        </section>
+  
+        <div class="next-project" id = 'ct-next-project'>
+          <a href = '#pocketpark' class="next-project-name" id = 'ct-next-project-name'>
+            <i class="fas fa-car fa-3x"></i>
+            <h2>Pocket Park</h2>
+            <div class="next-project-arrow">
+                <h2>Check it out</h2>
+                <i class="fas fa-arrow-right fa-2x"></i>
+            </div>
+          </a>
+        </div>
+      </main>
+    </script>
 
 
 
@@ -260,7 +966,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.4/tippy.all.min.js" integrity="sha512-9LKXH8DIeFSdiDIWQSOJNZuwLynJNm4x/1eBRpPfRJsEXZWJL+aoH+JNDglF3DcCoQYVBHqXo8sVHOLveoaN0A==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 

@@ -9,9 +9,15 @@ import { aboutPageController } from "/page-controllers/aboutPage.js";
 
 import { portfolioPageController } from "/page-controllers/portfolioPage.js";
 
-import { otherProjectsPageController } from "/page-controllers/otherProjectsPage.js";
-
 import { contactPageController } from "/page-controllers/contactPage.js";
+
+import { pocketparkPageController } from "/page-controllers/pocketparkPage.js";
+
+import { premierleaguePageController } from "/page-controllers/premierleaguePage.js";
+
+import { projectsportalPageController } from "/page-controllers/projectsportalPage.js";
+
+import { cloud9travelPageController } from "/page-controllers/cloud9travelPage.js";
 
 // Routes ---------------------------------------------
 // # (home)
@@ -23,10 +29,21 @@ App.addRoute("#about", aboutPageController);
 // #portfolio
 App.addRoute("#portfolio", portfolioPageController);
 
-// #otherProjects
-App.addRoute("#otherProjects", otherProjectsPageController);
-
 // #contact
 App.addRoute("#contact", contactPageController);
 
+// #pocketpark
+App.addRoute("#pocketpark", pocketparkPageController);
+
+// #premierleague
+App.addRoute("#premierleague", premierleaguePageController);
+
+// #projectsportal
+App.addRoute("#projectsportal", projectsportalPageController);
+
+// #cloud9travel
+App.addRoute("#cloud9travel", cloud9travelPageController);
+
+
+// Run APP INIT on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", App.init);

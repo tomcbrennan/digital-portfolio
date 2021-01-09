@@ -15,7 +15,7 @@ function contactPageController() {
 
     const homeAbout = document.querySelector(".home-about-container");
     const homePortfolio = document.querySelector(".home-portfolio-container");
-    const homeDont = document.querySelector(".home-dont-container");
+    const homeDont = document.querySelector(".home-blog-container");
     const homeContact = document.querySelector(".home-contact-container");
 
     const homeDiv = document.querySelector(".home-content");

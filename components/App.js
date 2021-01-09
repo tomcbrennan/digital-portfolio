@@ -14,6 +14,7 @@ const App = {
     window.addEventListener("hashchange", App.router);
 
     console.log("Get groovy with us in 129 ~~~~~> https://poolside.fm/");
+    
   },
 
   addRoute: (path, pageController) => {
