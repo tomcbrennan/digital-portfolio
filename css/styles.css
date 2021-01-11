@@ -898,6 +898,10 @@ button {
   margin-bottom: 20px;
 }
 
+#template-page-home {
+  overflow: hidden;
+}
+
 .home-section {
   height: 100vh;
   width: 100%;
@@ -916,7 +920,6 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  overflow-y: hidden;
   position: relative;
 }
 
