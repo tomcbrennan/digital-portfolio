@@ -595,6 +595,10 @@ p {
   display: none;
 }
 
+.mobile-menu.no-scroll {
+  overflow: hidden;
+}
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -4729,10 +4733,10 @@ button {
     position: absolute;
     display: -ms-grid;
     display: grid;
-    height: 50vh;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 50%;
+    padding-bottom: 100px;
   }
   .project-container {
     margin: 0;
