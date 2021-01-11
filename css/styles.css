@@ -916,7 +916,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
