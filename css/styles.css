@@ -5083,6 +5083,7 @@ button {
     z-index: -100;
     opacity: 0;
     background: #f1dfd1;
+    overflow: hidden;
   }
   .mobile-menu h1 {
     font-size: 3em;
