@@ -913,7 +913,6 @@ button {
   top: 20vh;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100000;
   text-align: center;
   animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
   width: 100%;
@@ -3907,4 +3906,11 @@ button {
   .about1-text {
     height: 60%;
   }
+
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    position: absolute;
+  }
+
 }
