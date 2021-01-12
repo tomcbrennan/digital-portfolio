@@ -343,7 +343,7 @@ body {
 .contact-icons {
   color: #cf1c1c;
   font-size: 3em;
-  width: 500px;
+  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +581,7 @@ p {
 .hamburger {
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 0;
   z-index: 1000;
   display: none !important;
 }
@@ -603,6 +603,8 @@ p {
 .hamburger-inner::before,
 .hamburger-inner::after {
   background-color: #cd8d60 !important;
+  width: 35px !important;
+  height: 3px !important;
 }
 
 button {
@@ -1159,6 +1161,7 @@ button {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 100000;
   text-align: center;
   -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
           animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
@@ -4733,9 +4736,8 @@ button {
     position: absolute;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 50%;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 100px;
   }
   .project-container {
@@ -4743,7 +4745,7 @@ button {
     margin-bottom: 10px;
   }
   .project-card {
-    min-height: 150px;
+    height: 300px;
     width: 90%;
     border-radius: 35px;
   }
@@ -4809,7 +4811,7 @@ button {
     text-align: center;
   }
   .portfolio-text {
-    top: 8%;
+    top: 12%;
   }
   .portfolio-text h1 {
     font-size: 1.3em;
@@ -4820,7 +4822,7 @@ button {
   }
   .project-card {
     min-height: 150px;
-    width: 90%;
+    width: 95%;
     border-radius: 35px;
   }
   .project-card .title {
@@ -5136,8 +5138,8 @@ button {
             transform: translateY(-500px);
   }
   .mobile-menu-logo.is-active {
-    -webkit-transition: 0.7s ease-in-out;
-    transition: 0.7s ease-in-out;
+    -webkit-transition: 1s ease-in-out 0.5s;
+    transition: 1s ease-in-out 0.5s;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -5146,6 +5148,14 @@ button {
     opacity: 1;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+  }
+  .mobile-menu.is-active .mobile-nav-container {
+    -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+            animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  }
+  .mobile-menu.is-active .mobile-socials {
+    -webkit-animation: fade-in-bottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+            animation: fade-in-bottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
   }
   .contact-icons {
     width: 90%;
@@ -5168,8 +5178,15 @@ button {
     font-size: 0.7em;
   }
   .portfolio-content {
-    top: 30vh;
+    top: 30%;
     width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .project-card {
+    height: 150px;
   }
   .project-card:hover {
     -webkit-transform: none;
@@ -5231,8 +5248,7 @@ button {
     top: 50vh;
   }
   .portfolio-content {
-    top: 20vh;
-    width: 90%;
+    top: 25%;
   }
 }
 

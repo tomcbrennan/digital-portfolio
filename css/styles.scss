@@ -304,7 +304,7 @@ body {
 .contact-icons {
   color: #cf1c1c;
   font-size: 3em;
-  width: 500px;
+  width: 600px;
   display: flex;
   justify-content: space-evenly;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
@@ -445,7 +445,7 @@ p {
 .hamburger {
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 0;
   z-index: 1000;
   display: none !important;
 
@@ -466,6 +466,9 @@ p {
 .hamburger-inner::before,
 .hamburger-inner::after {
   background-color: #cd8d60 !important;
+  width: 35px !important;
+  height: 3px !important;
+
 }
 
 button {
@@ -909,6 +912,7 @@ button {
   top: 20vh;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100000;
   text-align: center;
   animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
   width: 100%;
@@ -3333,8 +3337,7 @@ button {
   .portfolio-content {
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 100px;
   }
 
@@ -3344,7 +3347,7 @@ button {
   }
 
   .project-card {
-    min-height: 150px;
+    height: 300px;
     width: 90%;
     border-radius: 35px;
 
@@ -3406,7 +3409,7 @@ button {
       font-size: 1.3em;
     }
 
-    top: 8%;
+    top: 12%;
   }
 
   .project-container {
@@ -3416,7 +3419,7 @@ button {
 
   .project-card {
     min-height: 150px;
-    width: 90%;
+    width: 95%;
     border-radius: 35px;
 
     .title {
@@ -3760,7 +3763,7 @@ button {
   }
 
   .mobile-menu-logo.is-active {
-    transition: 0.7s ease-in-out;
+    transition: 1s ease-in-out 0.5s;
     transform: translateY(0);
   }
 
@@ -3768,6 +3771,14 @@ button {
     z-index: 998;
     opacity: 1;
     transition: 0.5s ease-in-out;
+
+    .mobile-nav-container {
+      animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+    }
+
+    .mobile-socials {
+      animation: fade-in-bottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+    }
   }
 
   .contact-icons {
@@ -3799,8 +3810,14 @@ button {
   }
 
   .portfolio-content {
-    top: 30vh;
+    top: 30%;
     width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .project-card {
+    height: 150px;
   }
 
 
@@ -3877,8 +3894,7 @@ button {
   }
 
   .portfolio-content {
-    top: 20vh;
-    width: 90%;
+    top: 25%;
   }
 }
 

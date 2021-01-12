@@ -144,7 +144,6 @@ function portfolioPageController() {
       } else {
         document.querySelector('.hamburger-box').style.display = 'block';
       }
-
     }
   );
 }
