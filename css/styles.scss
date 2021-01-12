@@ -141,6 +141,7 @@ body {
   height: 100%;
   width: 100%;
   background: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  position: fixed;
 }
 
 .home-content {
@@ -898,7 +899,7 @@ button {
 }
 
 .portfolio-content {
-  position: absolute;
+  position: fixed;
   top: 35%;
   left: 50%;
   transform: translateX(-50%);
@@ -3335,7 +3336,7 @@ button {
   }
 
   .portfolio-content {
-    position: absolute;
+    position: fixed;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 100px;

@@ -150,6 +150,7 @@ body {
   height: 100%;
   width: 100%;
   background: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  position: fixed;
 }
 
 .home-content {
@@ -1143,7 +1144,7 @@ button {
 }
 
 .portfolio-content {
-  position: absolute;
+  position: fixed;
   top: 35%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -4733,7 +4734,7 @@ button {
     top: 15vh;
   }
   .portfolio-content {
-    position: absolute;
+    position: fixed;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
