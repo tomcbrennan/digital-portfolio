@@ -14,6 +14,19 @@ const App = {
     window.addEventListener("hashchange", App.router);
 
     console.log("Get groovy with us in 129 ~~~~~> https://poolside.fm/");
+
+    // SHOW GSAP SLIDER ON MOBILE DEVICES
+    if(window.innerWidth < 1024){
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+      tl.to(".text", { y: "0%", duration: 3, stagger: 0.25 });
+      tl.to(".slider-text", { y: "-50%", duration: 1, opacity: 0 });
+      tl.to(".mobile-slider", { duration: 1, opacity: 0 },"-=1");
+      tl.to(".mobile-slider", { duration: 0.1, y:"-100%" });
+      tl.to(".slider-text", { duration: 0.1, y:"-100%" });
+    } else {
+      document.querySelector('.mobile-slider').style.display = 'none';
+    }
     
   },
 
