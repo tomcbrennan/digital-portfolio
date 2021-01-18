@@ -163,12 +163,16 @@ body {
   align-items: center;
   justify-content: center;
 
+  .slider-text {
+    margin-bottom: 50px;
 
-  .hide {
-    color: #f1dfd1;
-    text-align: center;
-    margin-bottom: 15px;
+    .hide {
+      color: #f1dfd1;
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
+
 }
 
 .home-about-container {

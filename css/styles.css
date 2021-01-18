@@ -188,7 +188,11 @@ body {
           justify-content: center;
 }
 
-.mobile-slider .hide {
+.mobile-slider .slider-text {
+  margin-bottom: 50px;
+}
+
+.mobile-slider .slider-text .hide {
   color: #f1dfd1;
   text-align: center;
   margin-bottom: 15px;
