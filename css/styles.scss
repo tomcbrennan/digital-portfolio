@@ -455,6 +455,12 @@ p {
   }
 }
 
+.hamburger--collapse {
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    transition-duration: 0.5s !important;
+  }
+}
+
 .mobile-menu {
   display: none;
 }

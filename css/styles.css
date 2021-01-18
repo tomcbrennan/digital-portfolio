@@ -592,6 +592,11 @@ p {
           animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
 }
 
+.hamburger--collapse .hamburger-inner, .hamburger--collapse .hamburger-inner::before, .hamburger--collapse .hamburger-inner::after {
+  -webkit-transition-duration: 0.5s !important;
+          transition-duration: 0.5s !important;
+}
+
 .mobile-menu {
   display: none;
 }
