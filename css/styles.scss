@@ -1108,6 +1108,73 @@ button {
   }
 }
 
+// ALL PROJECT MODALS
+
+.modal-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pocketpark-modal-section {
+  background: url(/media/pocketparkdisplay.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .project-modal {
+    height: 200px;
+    width: 400px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+
+    h1, h2, h3 {
+      animation: text-bottom-fade 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+    }
+  }
+
+  .modal-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+
+    .view-casestudy-btn {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 16px;
+      padding: 20px;
+      background-color: #225cff;
+      transition: 0.5s ease-in-out;
+      color: white;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+    }
+  }
+}
+
 // CONTACT SECTION STYLING
 
 .contact-section {
@@ -2806,6 +2873,32 @@ button {
 }
 
 // KEYFRAMES
+
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes text-bottom-fade {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes fade-in-bottom {
   0% {

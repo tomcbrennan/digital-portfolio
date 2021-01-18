@@ -19,6 +19,8 @@ import { projectsportalPageController } from "/page-controllers/projectsportalPa
 
 import { cloud9travelPageController } from "/page-controllers/cloud9travelPage.js";
 
+import { pocketparkModalController } from "/page-controllers/pocketparkModal.js";
+
 // Routes ---------------------------------------------
 // # (home)
 App.addRoute("#", homePageController);
@@ -43,6 +45,10 @@ App.addRoute("#projectsportal", projectsportalPageController);
 
 // #cloud9travel
 App.addRoute("#cloud9travel", cloud9travelPageController);
+
+
+// #pocketparkModal
+App.addRoute("#pocketparkModal", pocketparkModalController);
 
 
 // Run APP INIT on DOMContentLoaded
