@@ -17,6 +17,7 @@ html {
   --text-primary: #cf1c1c;
   --text-secondary: #fafafa;
   --bg-primary: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  --bg-primary: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
   --bg-secondary: #cf1c1c;
   --transition-speed: 200ms;
   --pocketpark-blue: #225cff;
@@ -2971,7 +2972,7 @@ button {
 .projectsportal-research {
   width: 100%;
   height: 100vh;
-  background: url(/media/projectsportaldisplay.png);
+  background: url(/media/projectsportaldisplay.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3525,7 +3526,7 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: url(/media/premierleaguedisplay.png);
+  background: url(/media/premierleaguedisplay.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
