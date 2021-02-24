@@ -5079,6 +5079,8 @@ button {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     top: 56vh;
+    left: 50%;
+    font-size: 1.5em;
   }
   .pocketpark-details {
     position: absolute;
